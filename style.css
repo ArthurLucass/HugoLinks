@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("./assets/imgBackground.png");
+  background-image: url("./assets/imgBackgroundV2.png");
   background-repeat: no-repeat;
 
   background-size: cover;
@@ -13,9 +13,8 @@ body {
 }
 
 .container {
-  width: 600px;
+  padding: 70px;
   text-align: center;
-  margin: 60px auto;
 }
 
 a {
@@ -49,32 +48,37 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
+.links {
+  display: flex;
+  justify-content: center;
+}
+
 ul {
   list-style: none;
-  margin: 48px 0px;
+  padding: 40px 0px;
+}
+
+ul li {
+  width: 600px;
+  padding: 20px;
+  margin-bottom: 15px;
+  align-items: center;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 ul li a {
-  height: 65px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #a6a6a6;
-  background: rgba(0, 0, 0, 0.3);
+  padding: 12px;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  margin-bottom: 16px;
-  border-radius: 8px;
+  color: #a6a6a6;
 }
 
-img.avatar-link {
-  width: 50px;
-
-  border-radius: 100%;
-  padding: 3.7px;
-}
-
-ul li a:hover {
+ul li:hover {
   background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.2),
+    0 17px 50px 0 rgba(0, 0, 0, 0.15);
+}
+ul li a:hover {
   color: #dadada;
 }
