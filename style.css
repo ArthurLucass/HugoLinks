@@ -7,14 +7,23 @@
 body {
   background-image: url("./assets/imgBackgroundV2.png");
   background-repeat: no-repeat;
-
   background-size: cover;
   font-family: "Roboto", sans-serif;
 }
 
 .container {
-  padding: 70px;
+  padding: 60px 30px;
   text-align: center;
+}
+
+header,
+main {
+  flex: 1;
+}
+
+main {
+  display: flex;
+  justify-content: center;
 }
 
 a {
@@ -51,15 +60,16 @@ p {
 .links {
   display: flex;
   justify-content: center;
+  width: 600px;
 }
 
 ul {
+  width: 100%;
+  padding: 20px 0px;
   list-style: none;
-  padding: 40px 0px;
 }
 
 ul li {
-  width: 600px;
   padding: 20px;
   margin-bottom: 15px;
   align-items: center;
